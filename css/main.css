@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(115deg, #0e3ed8, #02c36f);
+
+    font-family: Ubuntu;
+    
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    /* max-width: 1000px; */
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 5rem 7rem 1fr 1rem 10rem;
+
+    background: rgb(0 0 0 / 0.1);
+
+}
+
+.start-screen {
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    grid-column: 1 / -1;
+    grid-row: 3 / span 2;
+
+    display: flex;
+    justify-content: center;
+}
+
+.goals-container {
+    width: 40rem;
+    min-height: 100%;
+    height: fit-content;
+}
+
+/*LIST*/
+
+.goals-container__list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.list__li {
+    background: rgb(33 42 110);    
+    color: rgb(82 131 255);
+    padding: 0.4rem;
+    border-bottom: 2px solid rgb(0 0 0 / 0.3);
+    ;
+
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    cursor: pointer;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/*TEXT*/
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    color:rgb(20 28 89);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(20 28 89);;
+}
+
+li > h3 {
+    font-weight: 400;
+    margin: 0;
+    width: 97%;    
+    font-size: 1rem;
+    text-align: left;
+    /* color: black; */
+    /* height: 1.9rem; */
+}
+
+li > h3:hover {
+    text-decoration: underline;
+}
+
+i {
+    position: absolute;
+    right: 0.6rem;
+    top: 0.4rem;
+    color: rgb(0 0 0 / 0.5)
+
+    /* padding-left: 5px; */
+}
+
+i:hover {
+    color: unset;
+}
+
+h1 > i {
+    position:relative;
+    color:rgb(20 28 89);
+    transform: translateY(-0.5rem);
+}
+
+.li__p {
+    /* background:rgb(0 46 160); */
+    width: 100%;
+    height: 0%;
+    margin: 0.2rem 0 0 0;
+    padding: 0.6rem;
+    display: unset;
+    background: rgb(0 0 0 / 0.3);
+    color: rgb(112 142 222);
+    line-height: 1.3rem;
+    
+}
+
+.p-ul {
+    margin: 0.5rem 0;
+}
+
+.p-ul__li {
+    margin: 0.3rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+
